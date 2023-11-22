@@ -2,7 +2,7 @@ pipeline {
   agent any
   tools {
     maven 'mvn3'
-    jdk 'JDK11'
+    jdk 'jdk8'
   }
   stages {
     stage('stage1') {
@@ -13,7 +13,7 @@ pipeline {
 
     stage('Build') {
       steps {
-        echo 'Attempting to not fail the build'
+        echo 'Building for Java 8'
         sh 'mvn clean install'
       }
     }
