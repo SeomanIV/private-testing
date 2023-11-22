@@ -14,7 +14,7 @@
 	<name>private-testing</name>
 	<description>Testing various functionalities of coding and devops pipelines</description>
 	<properties>
-		<java.version>17</java.version>
+		<java.version>1.8</java.version>
 	</properties>
 	<dependencies>
 		<dependency>
