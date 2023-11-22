@@ -1,9 +1,5 @@
 pipeline {
   agent any
-  tools {
-    maven 'mvn3'
-    jdk 'jdk8'
-  }
   stages {
     stage('stage1') {
       steps {
@@ -18,5 +14,12 @@ pipeline {
       }
     }
 
+  }
+  tools {
+    maven 'mvn3'
+    jdk 'jdk8'
+  }
+  environment {
+    JAVA_HOME = '${tool \'jdk8\'}'
   }
 }
